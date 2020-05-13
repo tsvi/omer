@@ -6,8 +6,8 @@ def turn_number_to_words (number, fem = True, reverse = False, counting = False)
     ones_str = [u"", u"אחת", u"שתים", u"שלוש", u"ארבע", u"חמש", u"שש", u"שבע", u"שמונה", u"תשע", u"עשרה"]
 
     if not fem:
-        ones_str = [u"", u"אחד", u"שנים", u"שלושה", u"ארבעה", u"חמשה", u"ששה", u"שבעה", u"שמונה", u"תשעה", u"עשרה"]
-        tens_str[1] = u"עשר"
+        ones_str = [u"", u"אחד", u"שנים", u"שלושה", u"ארבעה", u"חמשה", u"ששה", u"שבעה", u"שמונה", u"תשעה", u"עשר"]
+        tens_str[1] = u"עשרה"
 
     ones = number % 10
     tens = (number % 100) // 10
