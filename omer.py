@@ -61,5 +61,3 @@ def get_omer_string(omer):
     omer_str += u" לעומר"
     return omer_str
 
-for i in range(1,50):
-    print(get_omer_string(i))
