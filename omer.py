@@ -13,7 +13,7 @@ def turn_number_to_words (number, fem = True, reverse = False, counting = False)
     tens = (number % 100) // 10
     # hundreds = number//100
     order = [tens_str[tens], ones_str[ones]]
-    number_str = ""
+   
     if reverse or tens < 2:
         order.reverse()
 
@@ -21,7 +21,7 @@ def turn_number_to_words (number, fem = True, reverse = False, counting = False)
     #     number_str += " "
     #     if tens < 2 and ones or tens !=0:
     #         number_str += u"ו"
-    number_str += order[0]
+    number_str = order[0]
     if tens == 1:
         if ones == 0:
             number_str += tens_str[tens]
